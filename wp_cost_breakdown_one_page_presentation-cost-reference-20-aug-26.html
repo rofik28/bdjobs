@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>WhatsApp Job Campaign — One Page Cost &amp; Funnel Presentation</title>
+<style>
+:root {
+  --bg:#f6f7fb; --ink:#111827; --muted:#667085; --card:#ffffff; --line:#e5e7eb;
+  --purple:#6d5dfc; --purple2:#8b5cf6; --teal:#21a8a8; --green:#10b981; --orange:#f59e0b; --red:#ef4444; --navy:#111827;
+}
+* { box-sizing:border-box; }
+body { margin:0; font-family: Inter, Segoe UI, Roboto, Arial, sans-serif; background: radial-gradient(circle at top left,#ebe8ff,transparent 32%), var(--bg); color:var(--ink); }
+.page { width: 1440px; min-height: 900px; margin:0 auto; padding:34px 42px; }
+.header { display:flex; justify-content:space-between; align-items:flex-start; gap:30px; margin-bottom:22px; }
+.kicker { display:inline-flex; align-items:center; gap:10px; font-weight:800; letter-spacing:.09em; text-transform:uppercase; font-size:13px; color:var(--purple); }
+.kicker:before { content:""; width:12px; height:12px; border-radius:50%; background:linear-gradient(135deg,var(--purple),var(--teal)); display:inline-block; }
+h1 { margin:10px 0 6px; font-size:46px; line-height:1.02; letter-spacing:-1.6px; }
+.subtitle { color:var(--muted); font-size:17px; max-width:760px; line-height:1.45; }
+.date-card { background:rgba(255,255,255,.72); border:1px solid var(--line); border-radius:22px; padding:18px 20px; min-width:325px; box-shadow:0 16px 40px rgba(17,24,39,.08); }
+.date-card b { display:block; font-size:15px; color:var(--muted); margin-bottom:6px; }
+.date-card strong { display:block; font-size:21px; }
+.grid { display:grid; grid-template-columns: 1.08fr .92fr; gap:20px; }
+.kpis { display:grid; grid-template-columns: repeat(4,1fr); gap:14px; margin-bottom:18px; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:24px; box-shadow:0 14px 38px rgba(17,24,39,.075); }
+.kpi { padding:18px; min-height:118px; }
+.kpi small { display:block; font-weight:700; color:var(--muted); font-size:13px; line-height:1.25; }
+.kpi strong { display:block; margin-top:10px; font-size:35px; letter-spacing:-1.1px; }
+.kpi em { display:block; margin-top:6px; font-style:normal; color:var(--muted); font-size:13px; }
+.funnel { padding:22px; margin-bottom:18px; }
+.section-title { display:flex; justify-content:space-between; align-items:end; gap:16px; margin-bottom:16px; }
+.section-title h2 { margin:0; font-size:25px; letter-spacing:-.6px; }
+.section-title p { margin:0; color:var(--muted); font-size:13px; }
+.stage-row { display:grid; grid-template-columns: 210px 1fr 92px; align-items:center; gap:14px; margin:13px 0; }
+.stage-label b { display:block; font-size:15px; }
+.stage-label span { display:block; color:var(--muted); font-size:12px; margin-top:3px; }
+.bar { height:14px; background:#eef0f6; border-radius:999px; overflow:hidden; }
+.bar i { display:block; height:100%; border-radius:999px; }
+.stage-num { text-align:right; font-weight:900; font-size:18px; }
+.stage-num em { display:block; font-style:normal; font-weight:700; font-size:11px; color:var(--muted); margin-top:3px; }
+.cost { padding:22px; }
+.cost-top { display:grid; grid-template-columns: repeat(3,1fr); gap:12px; margin-bottom:16px; }
+.mini { background:#f8f9fc; border:1px solid #edf0f7; border-radius:18px; padding:14px; }
+.mini span { display:block; color:var(--muted); font-weight:700; font-size:12px; }
+.mini b { display:block; margin-top:6px; font-size:25px; letter-spacing:-.5px; }
+table { width:100%; border-collapse:collapse; font-size:13px; overflow:hidden; border-radius:18px; }
+th { text-align:left; color:#475467; background:#f4f6fb; padding:11px 12px; font-size:12px; }
+td { padding:10px 12px; border-bottom:1px solid #eef0f4; vertical-align:top; }
+td small { display:block; color:var(--muted); margin-top:3px; }
+.cost-note { margin-top:12px; display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+.note { border-radius:18px; padding:14px; background:#fff7ed; border:1px solid #fed7aa; color:#7c2d12; font-size:13px; line-height:1.4; }
+.note.green { background:#ecfdf5; border-color:#bbf7d0; color:#065f46; }
+.right-col { display:grid; grid-template-rows:auto auto 1fr; gap:18px; }
+.outcomes { padding:20px; }
+.outcome-bars { display:grid; gap:10px; }
+.outcome { display:grid; grid-template-columns:112px 1fr 70px; gap:10px; align-items:center; font-size:13px; }
+.outcome .bar { height:12px; }
+.intent-card { padding:20px; }
+.intent-grid { display:grid; grid-template-columns:1fr 1fr; gap:9px; }
+.intent-pill { display:flex; align-items:center; gap:8px; background:#f8f9fc; border:1px solid #edf0f7; padding:10px 10px; border-radius:15px; min-height:46px; }
+.intent-pill span { width:10px; height:10px; border-radius:50%; flex:0 0 auto; }
+.intent-pill b { font-size:12.5px; flex:1; }
+.intent-pill em { font-style:normal; color:var(--muted); font-size:11px; }
+.replies { padding:20px; min-height:0; }
+.reply-scroll { height:305px; overflow:auto; padding-right:6px; display:grid; gap:8px; }
+.reply-item { border:1px solid #edf0f7; background:#fbfcff; border-radius:16px; padding:10px 12px; }
+.reply-top { display:flex; justify-content:space-between; gap:10px; margin-bottom:5px; }
+.reply-top b { font-size:12px; color:#344054; }
+.reply-top span { font-size:11px; color:var(--muted); white-space:nowrap; }
+.reply-item p { margin:0; font-size:12px; line-height:1.35; color:#1f2937; }
+.footer { display:flex; justify-content:space-between; align-items:center; margin-top:18px; color:#667085; font-size:12px; }
+.tag { display:inline-flex; align-items:center; border:1px solid #d8dcef; border-radius:999px; padding:7px 10px; background:rgba(255,255,255,.7); color:#475467; font-weight:700; }
+.big-highlight { color:var(--purple); }
+@media print {
+  body { background:white; }
+  .page { width:100%; padding:20px; }
+  .card { box-shadow:none; }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="header">
+<div>
+<div class="kicker">WhatsApp Job Recommendation Campaign</div>
+<h1>One-page funnel + cost breakdown</h1>
+<div class="subtitle">Based on deduplicated campaign logs after <b>17 Aug 2026, 5:00 PM</b>. Key issue: we reached many job seekers, but reply conversion remained very low.</div>
+</div>
+<div class="date-card">
+<b>Analyzed data window in Excel</b>
+<strong>17 Aug 2026, 05:47 PM – 20 Aug 2026, 06:28 AM</strong>
+<div style="margin-top:10px;color:#667085;font-size:13px;line-height:1.4">Duplicate log rows removed for reply-event counts. Applications are matched by PID from conversation-start logs to the Apply from WP sheet.</div>
+</div>
+</header>
+<section class="kpis">
+<div class="card kpi"><small>Total unique job seekers we sent messages to</small><strong>5,490</strong><em>Deduplicated All_Suggested_Jobs users</em></div>
+<div class="card kpi"><small>Total unique job seekers who replied</small><strong>173</strong><em>3.15% reply rate</em></div>
+<div class="card kpi"><small>Job details reached</small><strong>84</strong><em>48.6% of repliers</em></div>
+<div class="card kpi"><small>Confirmed application done (PID-matched)</small><strong>26</strong><em>0.47% of messaged users</em></div>
+</section>
+<div class="grid">
+<div>
+<section class="card funnel">
+<div class="section-title"><h2>Stage-wise highest reach</h2><p>Mutually exclusive user split · total = 5,490</p></div>
+<div class="stage-row">
+<div class="stage-label"><b>Only Suggested</b><span>No reply/details/application after suggestion</span></div>
+<div class="bar"><i style="width:96.812386%; background:#7b6ef6"></i></div>
+<div class="stage-num">5,315<em>96.8%</em></div>
+</div>
+<div class="stage-row">
+<div class="stage-label"><b>Replied / Asked Info</b><span>User replied; no details/app confirmed</span></div>
+<div class="bar"><i style="width:1.493625%; background:#28a5a5"></i></div>
+<div class="stage-num">82<em>1.5%</em></div>
+</div>
+<div class="stage-row">
+<div class="stage-label"><b>Job Details Provided</b><span>Reached detail stage; no app confirmed</span></div>
+<div class="bar"><i style="width:1.220401%; background:#f59e0b"></i></div>
+<div class="stage-num">67<em>1.2%</em></div>
+</div>
+<div class="stage-row">
+<div class="stage-label"><b>Application Done</b><span>Confirmed PID-matched application</span></div>
+<div class="bar"><i style="width:0.500000%; background:#10b981"></i></div>
+<div class="stage-num">26<em>0.5%</em></div>
+</div>
+<div style="margin-top:15px;display:flex;gap:10px;flex-wrap:wrap"><span class="tag">Applications matched to WhatsApp: <b style="margin-left:6px;color:#f97316">26</b></span><span class="tag">Users replying after application timestamp: <b style="margin-left:6px;color:#f97316">9</b></span><span class="tag">Distinct reply events: <b style="margin-left:6px;color:#344054">279</b></span></div>
+</section>
+<section class="card cost">
+<div class="section-title"><h2>Cost breakdown</h2><p>Reference estimate · prior unit economics scaled to updated funnel</p></div>
+<div class="cost-top">
+<div class="mini"><span>Estimated spend (reference model)</span><b class="big-highlight">৳18,593</b></div>
+<div class="mini"><span>Estimated cost / unique reply</span><b>৳107</b></div>
+<div class="mini"><span>Estimated cost / confirmed application</span><b>৳715</b></div>
+</div>
+<table>
+<thead><tr><th>Cost item</th><th>USD</th><th>Requests</th><th>Total BDT</th><th>BDT / request</th></tr></thead>
+<tbody>
+<tr>
+<td><b>Apply API</b><small>54 / 9 prior apps × 26 current apps</small></td>
+<td>$0.20</td>
+<td>156</td>
+<td>৳25.28</td>
+<td><b>৳0.16</b></td>
+</tr>
+<tr>
+<td><b>Job Matching API</b><small>3,525 / 2,663 prior sent × 5,490 current sent</small></td>
+<td>$118.56</td>
+<td>7,267</td>
+<td>৳14,820.04</td>
+<td><b>৳2.04</b></td>
+</tr>
+<tr>
+<td><b>Classifier API</b><small>629 / 75 prior reply events × 279 current events</small></td>
+<td>$5.24</td>
+<td>2,340</td>
+<td>৳654.81</td>
+<td><b>৳0.28</b></td>
+</tr>
+<tr>
+<td><b>WhatsApp successful-message equivalent</b><small>1,200 / 2,663 prior sent × 5,490 current sent</small></td>
+<td>$24.74</td><td>2,474</td><td>৳3,092.50</td><td><b>৳1.25</b></td>
+</tr>
+</tbody>
+</table>
+<div class="cost-note">
+<div class="note green"><b>Estimated API subtotal:</b> $124.00 / ৳15,500 across 9,763 estimated API requests. Weighted API avg = ৳1.59 per request.</div>
+<div class="note"><b>Reference method:</b> Prior request-to-funnel ratios and prior per-request prices were applied to the updated Excel-derived volumes. These figures are estimates, not observed billing records; invalid-number and GPT-budget-exceeded costs remain excluded because no charge rate is available.</div>
+</div>
+</section>
+</div>
+<aside class="right-col">
+<section class="card outcomes">
+<div class="section-title"><h2>Attempt outcome</h2><p>Existing delivery/system snapshot retained</p></div>
+<div class="outcome-bars">
+<div class="outcome"><b>Success</b><div class="bar"><i style="width:13.6%; background:#10b981"></i></div><span>1,200</span></div>
+<div class="outcome"><b>Invalid no.</b><div class="bar"><i style="width:23.9%; background:#ef4444"></i></div><span>2,100</span></div>
+<div class="outcome"><b>GPT budget</b><div class="bar"><i style="width:62.5%; background:#f59e0b"></i></div><span>5,500</span></div>
+</div>
+<p style="margin:13px 0 0;color:#667085;font-size:13px;line-height:1.45">Overall success among these stated attempts: <b style="color:#111827">13.6%</b>. Biggest preventable loss is GPT budget-exceeded failure volume.</p>
+</section>
+<section class="card intent-card">
+<div class="section-title"><h2>First reply intent</h2><p>Replies after first outbound message</p></div>
+<div class="intent-grid"><div class="intent-pill"><span style="background:#28a5a5"></span><b>Need info/details</b><em>66 users</em></div><div class="intent-pill"><span style="background:#7b6ef6"></span><b>Positive/yes/ok</b><em>47 users</em></div><div class="intent-pill"><span style="background:#10b981"></span><b>Apply intent</b><em>7 users</em></div><div class="intent-pill"><span style="background:#f97316"></span><b>Second/more job ask</b><em>11 users</em></div><div class="intent-pill"><span style="background:#8b8fa3"></span><b>Other / unclear</b><em>42 users</em></div></div>
+</section>
+<section class="card replies">
+<div class="section-title"><h2>All first replies (173)</h2><p>Masked numbers · scroll inside box</p></div>
+<div class="reply-scroll"><div class="reply-item"><div class="reply-top"><b>88018••••343</b><span>17 Aug 17:50 · Need info/details</span></div><p>চট্টগ্রাম?</p></div><div class="reply-item"><div class="reply-top"><b>88018••••433</b><span>17 Aug 17:50 · Other / unclear</span></div><p>?</p></div><div class="reply-item"><div class="reply-top"><b>88018••••969</b><span>17 Aug 17:51 · Apply intent</span></div><p>How can I apply?</p></div><div class="reply-item"><div class="reply-top"><b>88016••••680</b><span>17 Aug 17:52 · Other / unclear</span></div><p>Bro, when did BD Jobs start DM’ing people jobs on WhatsApp?</p></div><div class="reply-item"><div class="reply-top"><b>88017••••338</b><span>17 Aug 17:53 · Need info/details</span></div><p>Tell me more about this job post</p></div><div class="reply-item"><div class="reply-top"><b>88017••••110</b><span>17 Aug 17:53 · Other / unclear</span></div><p>Kay apni</p></div><div class="reply-item"><div class="reply-top"><b>88017••••504</b><span>17 Aug 17:53 · Need info/details</span></div><p>More info please</p></div><div class="reply-item"><div class="reply-top"><b>88017••••511</b><span>17 Aug 17:55 · Second/more job ask</span></div><p>I am searching for Nephrology not paediatric</p></div><div class="reply-item"><div class="reply-top"><b>88017••••231</b><span>17 Aug 17:55 · Positive/yes/ok</span></div><p>Yes</p></div><div class="reply-item"><div class="reply-top"><b>88014••••628</b><span>17 Aug 17:56 · Need info/details</span></div><p>Hello, I cannot see the update in my Bdjobs account. Could you please provide more information about the...</p></div><div class="reply-item"><div class="reply-top"><b>88019••••966</b><span>17 Aug 17:56 · Other / unclear</span></div><p>Thank you for contacting us! Please let us know how we can help you.</p></div><div class="reply-item"><div class="reply-top"><b>88017••••060</b><span>17 Aug 17:59 · Other / unclear</span></div><p>I'm a chemist not pharmacist, Am I eligible for this?</p></div><div class="reply-item"><div class="reply-top"><b>88016••••233</b><span>17 Aug 18:00 · Other / unclear</span></div><p>Thank you.</p></div><div class="reply-item"><div class="reply-top"><b>88017••••757</b><span>17 Aug 18:00 · Other / unclear</span></div><p>?</p></div><div class="reply-item"><div class="reply-top"><b>88017••••457</b><span>17 Aug 18:02 · Need info/details</span></div><p>Yes, I need more information about this</p></div><div class="reply-item"><div class="reply-top"><b>88017••••988</b><span>17 Aug 18:02 · Other / unclear</span></div><p>But secretary of what</p></div><div class="reply-item"><div class="reply-top"><b>88015••••496</b><span>17 Aug 18:03 · Other / unclear</span></div><p>Thank you for your message. We will get back to your query when we are available. In the meantime, if you...</p></div><div class="reply-item"><div class="reply-top"><b>88017••••720</b><span>17 Aug 18:03 · Positive/yes/ok</span></div><p>Thanks</p></div><div class="reply-item"><div class="reply-top"><b>88017••••075</b><span>17 Aug 18:04 · Other / unclear</span></div><p>Thanks 🙏. I will check it letter on</p></div><div class="reply-item"><div class="reply-top"><b>88017••••208</b><span>17 Aug 18:05 · Other / unclear</span></div><p>120000</p></div><div class="reply-item"><div class="reply-top"><b>88019••••869</b><span>17 Aug 18:05 · Positive/yes/ok</span></div><p>50,000</p></div><div class="reply-item"><div class="reply-top"><b>88015••••851</b><span>17 Aug 18:06 · Positive/yes/ok</span></div><p>Ok</p></div><div class="reply-item"><div class="reply-top"><b>88019••••799</b><span>17 Aug 18:08 · Positive/yes/ok</span></div><p>yes</p></div><div class="reply-item"><div class="reply-top"><b>88017••••480</b><span>17 Aug 18:10 · Other / unclear</span></div><p>??</p></div><div class="reply-item"><div class="reply-top"><b>88017••••503</b><span>17 Aug 18:10 · Other / unclear</span></div><p>Thank you for contacting ! Please let us know how we can help you.</p></div><div class="reply-item"><div class="reply-top"><b>88017••••068</b><span>17 Aug 18:10 · Need info/details</span></div><p>Need more information</p></div><div class="reply-item"><div class="reply-top"><b>88018••••799</b><span>17 Aug 18:11 · Other / unclear</span></div><p>i have resigned from robi axiata as manager. so i need senior manager or DGM level post</p></div><div class="reply-item"><div class="reply-top"><b>88019••••807</b><span>17 Aug 18:11 · Need info/details</span></div><p>Need more information</p></div><div class="reply-item"><div class="reply-top"><b>88019••••532</b><span>17 Aug 18:12 · Apply intent</span></div><p>I would like to apply here; please provide me with more information and explain how to apply.</p></div><div class="reply-item"><div class="reply-top"><b>88013••••238</b><span>17 Aug 18:13 · Need info/details</span></div><p>Give me more information</p></div><div class="reply-item"><div class="reply-top"><b>88018••••638</b><span>17 Aug 18:13 · Other / unclear</span></div><p>50 k</p></div><div class="reply-item"><div class="reply-top"><b>88016••••005</b><span>17 Aug 18:14 · Positive/yes/ok</span></div><p>Hi</p></div><div class="reply-item"><div class="reply-top"><b>88013••••127</b><span>17 Aug 18:15 · Other / unclear</span></div><p>Thank you for contacting MD AHAD MIA! Please let us know how we can help you.</p></div><div class="reply-item"><div class="reply-top"><b>88017••••147</b><span>17 Aug 18:15 · Need info/details</span></div><p>Need more Information</p></div><div class="reply-item"><div class="reply-top"><b>88017••••361</b><span>17 Aug 18:17 · Need info/details</span></div><p>Please provide more information. I am interested.</p></div><div class="reply-item"><div class="reply-top"><b>88017••••246</b><span>17 Aug 18:17 · Positive/yes/ok</span></div><p>Hi</p></div><div class="reply-item"><div class="reply-top"><b>88017••••272</b><span>17 Aug 18:17 · Need info/details</span></div><p>Please r aktu information dan</p></div><div class="reply-item"><div class="reply-top"><b>88017••••456</b><span>17 Aug 18:17 · Need info/details</span></div><p>And how to get information</p></div><div class="reply-item"><div class="reply-top"><b>88016••••646</b><span>17 Aug 18:18 · Need info/details</span></div><p>Where is this job located, and can I do it remotely?</p></div><div class="reply-item"><div class="reply-top"><b>88017••••032</b><span>17 Aug 18:18 · Positive/yes/ok</span></div><p>Thank you</p></div><div class="reply-item"><div class="reply-top"><b>88017••••893</b><span>17 Aug 18:18 · Need info/details</span></div><p>Is it remote?</p></div><div class="reply-item"><div class="reply-top"><b>88013••••523</b><span>17 Aug 18:20 · Positive/yes/ok</span></div><p>.</p></div><div class="reply-item"><div class="reply-top"><b>88017••••615</b><span>17 Aug 18:20 · Apply intent</span></div><p>But How we can apply for this post</p></div><div class="reply-item"><div class="reply-top"><b>88018••••237</b><span>17 Aug 18:20 · Need info/details</span></div><p>Where is the fty ? Is it Chittagong?</p></div><div class="reply-item"><div class="reply-top"><b>88019••••313</b><span>17 Aug 18:23 · Other / unclear</span></div><p>Would you please send me the job link?</p></div><div class="reply-item"><div class="reply-top"><b>88013••••676</b><span>17 Aug 18:24 · Apply intent</span></div><p>50 up salary</p></div><div class="reply-item"><div class="reply-top"><b>88019••••667</b><span>17 Aug 18:25 · Need info/details</span></div><p>I need more information, also please advise whether it is ready made garments, or trading house or a plai...</p></div><div class="reply-item"><div class="reply-top"><b>88016••••978</b><span>17 Aug 18:27 · Other / unclear</span></div><p>Hello, this is Fahad from Upwave Communication — your results-driven partner for complete 360° digital ma...</p></div><div class="reply-item"><div class="reply-top"><b>88016••••899</b><span>17 Aug 18:27 · Other / unclear</span></div><p>Hi! Thanks for The update</p></div><div class="reply-item"><div class="reply-top"><b>88018••••453</b><span>17 Aug 18:27 · Positive/yes/ok</span></div><p>Hi</p></div><div class="reply-item"><div class="reply-top"><b>88015••••939</b><span>17 Aug 18:30 · Other / unclear</span></div><p>আসসালামু আলাইকুম। আমাদের সাথে যোগাযোগ করার জন্য ধন্যবাদ। দয়া করে আপনার প্রশ্ন টি করুন। আমাদের একজন প্রতিন...</p></div><div class="reply-item"><div class="reply-top"><b>88018••••564</b><span>17 Aug 18:31 · Other / unclear</span></div><p>It would be helpful if you let me know which parts I should update.</p></div><div class="reply-item"><div class="reply-top"><b>88015••••681</b><span>18 Aug 16:50 · Positive/yes/ok</span></div><p>It's a good opportunity.</p></div><div class="reply-item"><div class="reply-top"><b>88017••••637</b><span>18 Aug 16:50 · Need info/details</span></div><p>Could you please send me details. Thanks</p></div><div class="reply-item"><div class="reply-top"><b>88018••••229</b><span>18 Aug 16:50 · Need info/details</span></div><p>How Much selary?</p></div><div class="reply-item"><div class="reply-top"><b>88019••••752</b><span>18 Aug 16:51 · Positive/yes/ok</span></div><p>Thanks for your information</p></div><div class="reply-item"><div class="reply-top"><b>88015••••603</b><span>18 Aug 16:52 · Positive/yes/ok</span></div><p>hlw</p></div><div class="reply-item"><div class="reply-top"><b>88018••••502</b><span>18 Aug 16:52 · Positive/yes/ok</span></div><p>Thanks</p></div><div class="reply-item"><div class="reply-top"><b>88019••••102</b><span>18 Aug 16:52 · Positive/yes/ok</span></div><p>Hi</p></div><div class="reply-item"><div class="reply-top"><b>88016••••316</b><span>18 Aug 16:53 · Need info/details</span></div><p>Share more info</p></div><div class="reply-item"><div class="reply-top"><b>88017••••943</b><span>18 Aug 16:53 · Positive/yes/ok</span></div><p>Yes</p></div><div class="reply-item"><div class="reply-top"><b>88017••••836</b><span>18 Aug 16:53 · Need info/details</span></div><p>Give me address of this school</p></div><div class="reply-item"><div class="reply-top"><b>88019••••941</b><span>18 Aug 16:53 · Need info/details</span></div><p>Pls give me more updatr</p></div><div class="reply-item"><div class="reply-top"><b>88016••••622</b><span>18 Aug 16:54 · Positive/yes/ok</span></div><p>Yes</p></div><div class="reply-item"><div class="reply-top"><b>88016••••271</b><span>18 Aug 16:54 · Other / unclear</span></div><p>110000 tk</p></div><div class="reply-item"><div class="reply-top"><b>88016••••887</b><span>18 Aug 16:54 · Other / unclear</span></div><p>Let me know</p></div><div class="reply-item"><div class="reply-top"><b>88016••••526</b><span>18 Aug 16:54 · Need info/details</span></div><p>Pls share more information</p></div><div class="reply-item"><div class="reply-top"><b>88018••••066</b><span>18 Aug 16:54 · Second/more job ask</span></div><p>Not interested with below Manager. Please come look after me if you have such positions</p></div><div class="reply-item"><div class="reply-top"><b>88017••••065</b><span>18 Aug 16:55 · Need info/details</span></div><p>Share details pls</p></div><div class="reply-item"><div class="reply-top"><b>88018••••345</b><span>18 Aug 16:55 · Second/more job ask</span></div><p>Next</p></div><div class="reply-item"><div class="reply-top"><b>88019••••875</b><span>18 Aug 16:55 · Need info/details</span></div><p>Let me know the details</p></div><div class="reply-item"><div class="reply-top"><b>88016••••157</b><span>18 Aug 16:56 · Need info/details</span></div><p>i need more information</p></div><div class="reply-item"><div class="reply-top"><b>88016••••824</b><span>18 Aug 16:56 · Second/more job ask</span></div><p>Sorry, I am in Brand and Marketing. If you have opportunities regarding that kindly let me know</p></div><div class="reply-item"><div class="reply-top"><b>88017••••782</b><span>18 Aug 16:57 · Second/more job ask</span></div><p>New opportunity?</p></div><div class="reply-item"><div class="reply-top"><b>88019••••959</b><span>18 Aug 16:57 · Other / unclear</span></div><p>Sorry I am not this person . Please verify and delete it.</p></div><div class="reply-item"><div class="reply-top"><b>88016••••007</b><span>18 Aug 16:58 · Positive/yes/ok</span></div><p>thanks you</p></div><div class="reply-item"><div class="reply-top"><b>88017••••433</b><span>18 Aug 16:58 · Need info/details</span></div><p>please tell me details</p></div><div class="reply-item"><div class="reply-top"><b>88018••••859</b><span>18 Aug 16:58 · Other / unclear</span></div><p>I think this position is way lower than my current position</p></div><div class="reply-item"><div class="reply-top"><b>88013••••616</b><span>18 Aug 16:59 · Other / unclear</span></div><p>Reply</p></div><div class="reply-item"><div class="reply-top"><b>88016••••502</b><span>18 Aug 16:59 · Apply intent</span></div><p>Please share Application link pls.</p></div><div class="reply-item"><div class="reply-top"><b>88016••••811</b><span>18 Aug 16:59 · Other / unclear</span></div><p>??</p></div><div class="reply-item"><div class="reply-top"><b>88017••••719</b><span>18 Aug 16:59 · Positive/yes/ok</span></div><p>Ok noted</p></div><div class="reply-item"><div class="reply-top"><b>88017••••950</b><span>18 Aug 16:59 · Need info/details</span></div><p>Interview Date?</p></div><div class="reply-item"><div class="reply-top"><b>88015••••138</b><span>18 Aug 17:00 · Positive/yes/ok</span></div><p>yes</p></div><div class="reply-item"><div class="reply-top"><b>88016••••720</b><span>18 Aug 17:00 · Need info/details</span></div><p>Details</p></div><div class="reply-item"><div class="reply-top"><b>88016••••533</b><span>18 Aug 17:00 · Other / unclear</span></div><p>not related to my desired job position</p></div><div class="reply-item"><div class="reply-top"><b>88017••••892</b><span>18 Aug 17:00 · Positive/yes/ok</span></div><p>Thank you. I will check</p></div><div class="reply-item"><div class="reply-top"><b>88017••••486</b><span>18 Aug 17:00 · Second/more job ask</span></div><p>Thank you but I am looking for senior level job in SAP or ARIBA.</p></div><div class="reply-item"><div class="reply-top"><b>88013••••928</b><span>18 Aug 17:01 · Need info/details</span></div><p>New more information</p></div><div class="reply-item"><div class="reply-top"><b>88016••••426</b><span>18 Aug 17:01 · Need info/details</span></div><p>I need more update on this</p></div><div class="reply-item"><div class="reply-top"><b>88016••••252</b><span>18 Aug 17:01 · Need info/details</span></div><p>Could you please share with me more details about Ashtga International and the scope of work.</p></div><div class="reply-item"><div class="reply-top"><b>88017••••087</b><span>18 Aug 17:01 · Positive/yes/ok</span></div><p>Ok</p></div><div class="reply-item"><div class="reply-top"><b>88017••••773</b><span>18 Aug 17:01 · Need info/details</span></div><p>I would like to know about the company details</p></div><div class="reply-item"><div class="reply-top"><b>88017••••267</b><span>18 Aug 17:01 · Other / unclear</span></div><p>??</p></div><div class="reply-item"><div class="reply-top"><b>88018••••752</b><span>18 Aug 17:01 · Other / unclear</span></div><p>I want to participate interview. But did not get any call</p></div><div class="reply-item"><div class="reply-top"><b>88019••••124</b><span>18 Aug 17:01 · Apply intent</span></div><p>Apply link?</p></div><div class="reply-item"><div class="reply-top"><b>88018••••027</b><span>18 Aug 17:02 · Second/more job ask</span></div><p>I am not interested to apply for this position. Currently, I am working as deputy Manager,VAT&amp; Tax. So, P...</p></div><div class="reply-item"><div class="reply-top"><b>88017••••290</b><span>18 Aug 17:03 · Other / unclear</span></div><p>01752•••290</p></div><div class="reply-item"><div class="reply-top"><b>88018••••917</b><span>18 Aug 17:03 · Need info/details</span></div><p>সেলারি কত</p></div><div class="reply-item"><div class="reply-top"><b>88016••••580</b><span>18 Aug 17:04 · Positive/yes/ok</span></div><p>Good afternoon!</p></div><div class="reply-item"><div class="reply-top"><b>88016••••668</b><span>18 Aug 17:05 · Other / unclear</span></div><p>85k per month</p></div><div class="reply-item"><div class="reply-top"><b>88016••••553</b><span>18 Aug 17:08 · Need info/details</span></div><p>give me link</p></div><div class="reply-item"><div class="reply-top"><b>88017••••200</b><span>18 Aug 17:08 · Other / unclear</span></div><p>My job application received by carry bee</p></div><div class="reply-item"><div class="reply-top"><b>88017••••610</b><span>18 Aug 17:09 · Need info/details</span></div><p>What's are the job descriptions?</p></div><div class="reply-item"><div class="reply-top"><b>88017••••445</b><span>18 Aug 17:11 · Positive/yes/ok</span></div><p>Thank you for the information</p></div><div class="reply-item"><div class="reply-top"><b>88016••••749</b><span>18 Aug 17:13 · Other / unclear</span></div><p>Hi, I'm from merchandising background. Thank you!</p></div><div class="reply-item"><div class="reply-top"><b>88017••••023</b><span>18 Aug 17:13 · Need info/details</span></div><p>Position name and JD please</p></div><div class="reply-item"><div class="reply-top"><b>88019••••178</b><span>18 Aug 17:15 · Other / unclear</span></div><p>Sir, it's gone, I haven't been called for an interview, please tell me what I can do now.</p></div><div class="reply-item"><div class="reply-top"><b>88019••••023</b><span>18 Aug 17:17 · Need info/details</span></div><p>Hi,. I want to more detail information about this job</p></div><div class="reply-item"><div class="reply-top"><b>88015••••277</b><span>18 Aug 17:18 · Need info/details</span></div><p>Hello Assalamualaikum. Please let me know what kind of update you have for me regarding this job.</p></div><div class="reply-item"><div class="reply-top"><b>88016••••785</b><span>18 Aug 17:18 · Other / unclear</span></div><p>50k</p></div><div class="reply-item"><div class="reply-top"><b>88017••••435</b><span>18 Aug 17:21 · Need info/details</span></div><p>I need update</p></div><div class="reply-item"><div class="reply-top"><b>88017••••508</b><span>18 Aug 17:21 · Need info/details</span></div><p>Please give me Link</p></div><div class="reply-item"><div class="reply-top"><b>88017••••910</b><span>18 Aug 17:23 · Positive/yes/ok</span></div><p>Yes</p></div><div class="reply-item"><div class="reply-top"><b>88017••••125</b><span>18 Aug 17:32 · Positive/yes/ok</span></div><p>Yes</p></div><div class="reply-item"><div class="reply-top"><b>88019••••828</b><span>18 Aug 17:32 · Positive/yes/ok</span></div><p>Yes</p></div><div class="reply-item"><div class="reply-top"><b>88017••••338</b><span>18 Aug 17:33 · Need info/details</span></div><p>More</p></div><div class="reply-item"><div class="reply-top"><b>88019••••862</b><span>18 Aug 17:34 · Positive/yes/ok</span></div><p>Thanks</p></div><div class="reply-item"><div class="reply-top"><b>88013••••000</b><span>18 Aug 17:35 · Positive/yes/ok</span></div><p>Yess</p></div><div class="reply-item"><div class="reply-top"><b>88017••••060</b><span>18 Aug 17:37 · Other / unclear</span></div><p>Currently I’m holding a senior position than Assistant Manager.</p></div><div class="reply-item"><div class="reply-top"><b>88016••••435</b><span>18 Aug 17:41 · Need info/details</span></div><p>i need more information</p></div><div class="reply-item"><div class="reply-top"><b>88017••••699</b><span>18 Aug 17:42 · Need info/details</span></div><p>Please share the package</p></div><div class="reply-item"><div class="reply-top"><b>88017••••499</b><span>18 Aug 17:42 · Need info/details</span></div><p>Is this a buying office?</p></div><div class="reply-item"><div class="reply-top"><b>88017••••473</b><span>18 Aug 17:43 · Need info/details</span></div><p>Pls give me details</p></div><div class="reply-item"><div class="reply-top"><b>88017••••619</b><span>18 Aug 17:44 · Positive/yes/ok</span></div><p>Its Ok but tnx for ur support.</p></div><div class="reply-item"><div class="reply-top"><b>88017••••543</b><span>18 Aug 17:46 · Positive/yes/ok</span></div><p>Hi</p></div><div class="reply-item"><div class="reply-top"><b>88019••••526</b><span>18 Aug 17:48 · Other / unclear</span></div><p>Not interested</p></div><div class="reply-item"><div class="reply-top"><b>88017••••166</b><span>18 Aug 17:50 · Other / unclear</span></div><p>I will share the update cv for You</p></div><div class="reply-item"><div class="reply-top"><b>88017••••217</b><span>18 Aug 17:51 · Need info/details</span></div><p>Yes.. I need more information</p></div><div class="reply-item"><div class="reply-top"><b>88017••••467</b><span>18 Aug 18:12 · Need info/details</span></div><p>More Information</p></div><div class="reply-item"><div class="reply-top"><b>88017••••042</b><span>18 Aug 18:17 · Positive/yes/ok</span></div><p>Thank you</p></div><div class="reply-item"><div class="reply-top"><b>88013••••292</b><span>18 Aug 18:24 · Need info/details</span></div><p>I want to know more</p></div><div class="reply-item"><div class="reply-top"><b>88019••••479</b><span>18 Aug 18:24 · Other / unclear</span></div><p>No</p></div><div class="reply-item"><div class="reply-top"><b>88019••••791</b><span>18 Aug 18:27 · Positive/yes/ok</span></div><p>Hi</p></div><div class="reply-item"><div class="reply-top"><b>88018••••421</b><span>18 Aug 18:35 · Positive/yes/ok</span></div><p>Yes, expected salary : 1 lac</p></div><div class="reply-item"><div class="reply-top"><b>88018••••687</b><span>18 Aug 18:39 · Positive/yes/ok</span></div><p>thanks</p></div><div class="reply-item"><div class="reply-top"><b>88017••••573</b><span>18 Aug 18:40 · Positive/yes/ok</span></div><p>Yes i agree</p></div><div class="reply-item"><div class="reply-top"><b>88018••••396</b><span>18 Aug 18:41 · Need info/details</span></div><p>Give me responsibility and salary structure</p></div><div class="reply-item"><div class="reply-top"><b>88019••••412</b><span>18 Aug 18:52 · Other / unclear</span></div><p>130000</p></div><div class="reply-item"><div class="reply-top"><b>88017••••361</b><span>18 Aug 18:58 · Positive/yes/ok</span></div><p>Ok</p></div><div class="reply-item"><div class="reply-top"><b>88017••••087</b><span>18 Aug 19:02 · Need info/details</span></div><p>yes, i need more information about this job</p></div><div class="reply-item"><div class="reply-top"><b>88017••••836</b><span>18 Aug 19:05 · Other / unclear</span></div><p>Please</p></div><div class="reply-item"><div class="reply-top"><b>88016••••486</b><span>18 Aug 19:10 · Second/more job ask</span></div><p>Do you have any Vacancy in BTL Manager position ?</p></div><div class="reply-item"><div class="reply-top"><b>88018••••409</b><span>18 Aug 19:12 · Need info/details</span></div><p>Need more information</p></div><div class="reply-item"><div class="reply-top"><b>88019••••247</b><span>18 Aug 19:34 · Need info/details</span></div><p>Please share with me the job requirement details</p></div><div class="reply-item"><div class="reply-top"><b>88018••••279</b><span>18 Aug 19:46 · Need info/details</span></div><p>Which country, where interview, salary full details tell me</p></div><div class="reply-item"><div class="reply-top"><b>88016••••269</b><span>18 Aug 19:47 · Positive/yes/ok</span></div><p>Yes please</p></div><div class="reply-item"><div class="reply-top"><b>88017••••215</b><span>18 Aug 19:50 · Apply intent</span></div><p>give me apply link</p></div><div class="reply-item"><div class="reply-top"><b>88018••••732</b><span>18 Aug 20:15 · Positive/yes/ok</span></div><p>Hi</p></div><div class="reply-item"><div class="reply-top"><b>88017••••506</b><span>18 Aug 20:16 · Need info/details</span></div><p>Please share more information</p></div><div class="reply-item"><div class="reply-top"><b>88017••••637</b><span>18 Aug 20:21 · Need info/details</span></div><p>I need more info</p></div><div class="reply-item"><div class="reply-top"><b>88017••••528</b><span>18 Aug 20:34 · Need info/details</span></div><p>Please give more information.</p></div><div class="reply-item"><div class="reply-top"><b>88016••••034</b><span>18 Aug 20:43 · Positive/yes/ok</span></div><p>Thanka</p></div><div class="reply-item"><div class="reply-top"><b>88017••••515</b><span>18 Aug 21:16 · Need info/details</span></div><p>More update please</p></div><div class="reply-item"><div class="reply-top"><b>88017••••719</b><span>18 Aug 21:20 · Need info/details</span></div><p>How many days weekend per week and office Time per Day.</p></div><div class="reply-item"><div class="reply-top"><b>88017••••403</b><span>18 Aug 21:36 · Need info/details</span></div><p>Interested could you plz tell more</p></div><div class="reply-item"><div class="reply-top"><b>88016••••447</b><span>18 Aug 22:39 · Positive/yes/ok</span></div><p>Yes please</p></div><div class="reply-item"><div class="reply-top"><b>88017••••903</b><span>18 Aug 22:48 · Need info/details</span></div><p>Please tell me more about this</p></div><div class="reply-item"><div class="reply-top"><b>88017••••712</b><span>18 Aug 23:12 · Need info/details</span></div><p>Need details</p></div><div class="reply-item"><div class="reply-top"><b>88018••••729</b><span>18 Aug 23:21 · Positive/yes/ok</span></div><p>Done</p></div><div class="reply-item"><div class="reply-top"><b>88016••••252</b><span>19 Aug 00:28 · Second/more job ask</span></div><p>Never sent any position with a salary less than 60k</p></div><div class="reply-item"><div class="reply-top"><b>88017••••080</b><span>19 Aug 01:15 · Need info/details</span></div><p>Please provide update</p></div><div class="reply-item"><div class="reply-top"><b>88018••••626</b><span>19 Aug 07:37 · Need info/details</span></div><p>Please share further details</p></div><div class="reply-item"><div class="reply-top"><b>88017••••068</b><span>19 Aug 08:03 · Need info/details</span></div><p>Please share in details</p></div><div class="reply-item"><div class="reply-top"><b>88016••••385</b><span>19 Aug 09:07 · Need info/details</span></div><p>Details share</p></div><div class="reply-item"><div class="reply-top"><b>88018••••497</b><span>19 Aug 10:14 · Positive/yes/ok</span></div><p>Yes</p></div><div class="reply-item"><div class="reply-top"><b>88017••••511</b><span>19 Aug 10:15 · Positive/yes/ok</span></div><p>Hlw</p></div><div class="reply-item"><div class="reply-top"><b>88017••••625</b><span>19 Aug 10:46 · Need info/details</span></div><p>I need more info about this job.</p></div><div class="reply-item"><div class="reply-top"><b>88017••••250</b><span>19 Aug 11:25 · Positive/yes/ok</span></div><p>Helloooo</p></div><div class="reply-item"><div class="reply-top"><b>88017••••555</b><span>19 Aug 13:22 · Second/more job ask</span></div><p>Thank you for the update. I really appreciate your support. Please keep me updated if any suitable opport...</p></div><div class="reply-item"><div class="reply-top"><b>88017••••666</b><span>19 Aug 16:57 · Positive/yes/ok</span></div><p>Yes please</p></div><div class="reply-item"><div class="reply-top"><b>88016••••600</b><span>19 Aug 16:58 · Second/more job ask</span></div><p>I expected Job Location In Dhaka. Also expected purchase Department or Sells Department.</p></div><div class="reply-item"><div class="reply-top"><b>88017••••041</b><span>20 Aug 06:27 · Positive/yes/ok</span></div><p>Yes</p></div></div>
+</section>
+</aside>
+</div>
+<footer class="footer">
+<span>Source: Wp apply and WhatsappConversion data.xlsx · Window: after 17 Aug 2026 5:00 PM</span>
+<span>Prepared for campaign cost + funnel review</span>
+</footer>
+</main>
+</body>
+</html>
